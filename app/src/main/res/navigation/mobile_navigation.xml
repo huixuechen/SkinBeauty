@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.skinbeauty.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.skinbeauty.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_conditionsFragment"
+            app:destination="@id/conditionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.skinbeauty.ui.tips.TipsFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_tips" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_drySkinFragment"
+            app:destination="@id/drySkinFragment" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_wrinklesFragment"
+            app:destination="@id/wrinklesFragment" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_underEyeBagsFragment"
+            app:destination="@id/underEyeBagsFragment" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_radianceFragment"
+            app:destination="@id/radianceFragment" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_pigmentationFragment"
+            app:destination="@id/pigmentationFragment" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_firmnessFragment"
+            app:destination="@id/firmnessFragment" />
+        <action
+            android:id="@+id/action_nav_slideshow_to_fineLinesFragment"
+            app:destination="@id/fineLinesFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.skinbeauty.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profile_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/question1Fragment"
+        android:name="com.example.skinbeauty.ui.questions.Question1Fragment"
+        android:label="Question1"
+        tools:layout="@layout/fragment_question1" >
+        <action
+            android:id="@+id/action_question1Fragment_to_question2Fragment"
+            app:destination="@id/question2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question2Fragment"
+        android:name="com.example.skinbeauty.ui.questions.Question2Fragment"
+        android:label="Question2"
+        tools:layout="@layout/fragment_question2" >
+        <action
+            android:id="@+id/action_question2Fragment_to_question3Fragment"
+            app:destination="@id/question3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question3Fragment"
+        android:name="com.example.skinbeauty.ui.questions.Question3Fragment"
+        android:label="Question3"
+        tools:layout="@layout/fragment_question3" >
+        <action
+            android:id="@+id/action_question3Fragment_to_question4Fragment"
+            app:destination="@id/question4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question4Fragment"
+        android:name="com.example.skinbeauty.ui.questions.Question4Fragment"
+        android:label="Question4"
+        tools:layout="@layout/fragment_question4" >
+        <action
+            android:id="@+id/action_question4Fragment_to_question5Fragment"
+            app:destination="@id/question5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question5Fragment"
+        android:name="com.example.skinbeauty.ui.questions.Question5Fragment"
+        android:label="Question5"
+        tools:layout="@layout/fragment_question5" >
+        <action
+            android:id="@+id/action_question5Fragment_to_question6Fragment"
+            app:destination="@id/question6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question6Fragment"
+        android:name="com.example.skinbeauty.ui.questions.Question6Fragment"
+        android:label="Question6"
+        tools:layout="@layout/fragment_question6" >
+        <action
+            android:id="@+id/action_question6Fragment_to_question7Fragment"
+            app:destination="@id/question7Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/question7Fragment"
+        android:name="com.example.skinbeauty.ui.questions.Question7Fragment"
+        android:label="Question7"
+        tools:layout="@layout/fragment_question7" >
+        <action
+            android:id="@+id/action_question7Fragment_to_uploadFragment"
+            app:destination="@id/uploadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/conditionsFragment"
+        android:name="com.example.skinbeauty.ui.questions.ConditionsFragment"
+        android:label="Conditions"
+        tools:layout="@layout/fragment_conditions" >
+        <action
+            android:id="@+id/action_conditionsFragment_to_noticeFragment"
+            app:destination="@id/noticeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noticeFragment"
+        android:name="com.example.skinbeauty.ui.questions.NoticeFragment"
+        android:label="Warning Notice"
+        tools:layout="@layout/fragment_notice" >
+        <action
+            android:id="@+id/action_noticeFragment_to_question1Fragment"
+            app:destination="@id/question1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadFragment"
+        android:name="com.example.skinbeauty.ui.questions.UploadFragment"
+        android:label="Upload Photo"
+        tools:layout="@layout/fragment_upload_photo" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.skinbeauty.ui.chat.ChatFragment"
+        android:label="Chatbot"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/drySkinFragment"
+        android:name="com.example.skinbeauty.ui.tips.DrySkinFragment"
+        android:label="Dry Skin"
+        tools:layout="@layout/fragment_dry_skin" >
+        <action
+            android:id="@+id/action_drySkinFragment_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+    <fragment
+        android:id="@+id/wrinklesFragment"
+        android:name="com.example.skinbeauty.ui.tips.WrinklesFragment"
+        android:label="Wrinkles"
+        tools:layout="@layout/fragment_wrinkles" >
+        <action
+            android:id="@+id/action_wrinklesFragment_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+    <fragment
+        android:id="@+id/underEyeBagsFragment"
+        android:name="com.example.skinbeauty.ui.tips.UnderEyeBagsFragment"
+        android:label="Under Eye Bags"
+        tools:layout="@layout/fragment_under_eye_bags" >
+        <action
+            android:id="@+id/action_underEyeBagsFragment_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+    <fragment
+        android:id="@+id/radianceFragment"
+        android:name="com.example.skinbeauty.ui.tips.RadianceFragment"
+        android:label="Radiance"
+        tools:layout="@layout/fragment_radiance" >
+        <action
+            android:id="@+id/action_radianceFragment_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+    <fragment
+        android:id="@+id/pigmentationFragment"
+        android:name="com.example.skinbeauty.ui.tips.PigmentationFragment"
+        android:label="Pigmentation"
+        tools:layout="@layout/fragment_pigmentation" >
+        <action
+            android:id="@+id/action_pigmentationFragment_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+    <fragment
+        android:id="@+id/firmnessFragment"
+        android:name="com.example.skinbeauty.ui.tips.FirmnessFragment"
+        android:label="Firmness"
+        tools:layout="@layout/fragment_firmness" >
+        <action
+            android:id="@+id/action_firmnessFragment_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+    <fragment
+        android:id="@+id/fineLinesFragment"
+        android:name="com.example.skinbeauty.ui.tips.FineLinesFragment"
+        android:label="Fine_Lines"
+        tools:layout="@layout/fragment_fine_lines" >
+        <action
+            android:id="@+id/action_fineLinesFragment_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.skinbeauty.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+</navigation>

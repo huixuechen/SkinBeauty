@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#222"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="141dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
+        android:backgroundTint="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
+        android:backgroundTint="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#555555"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/button_go_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="go back"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#555555"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    tools:context=".ui.questions.Question1Fragment">
+
+    <TextView
+        android:id="@+id/step_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 of 7"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/section_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About you"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/step_indicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/question_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's your gender?"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/section_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/question_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It will help us to adjust routines to match your gender."
+        android:textColor="#aaa"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/question_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <LinearLayout
+        android:id="@+id/gender_options"
+        android:layout_width="446dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/button_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_subtitle">
+
+        <LinearLayout
+            android:layout_width="93dp"
+            android:layout_height="133dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_female"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_female" />
+
+            <CheckBox
+                android:id="@+id/checkbox_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Female"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="92dp"
+            android:layout_height="137dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_male"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_male" />
+
+            <CheckBox
+                android:id="@+id/checkbox_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Male"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="116dp"
+            android:layout_height="138dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_other"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_other" />
+
+            <CheckBox
+                android:id="@+id/checkbox_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Other"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="#555"
+        android:padding="16dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

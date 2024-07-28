@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    tools:context=".ui.questions.Question4Fragment">
+
+    <TextView
+        android:id="@+id/step_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 of 7"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/section_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About you"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/step_indicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/question_title"
+        android:layout_width="411dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:text="What's your experience with skincare routines?"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/section_title" />
+
+    <TextView
+        android:id="@+id/question_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="We'll use this information to personalize your experience."
+        android:textColor="#aaa"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_title" />
+
+    <LinearLayout
+        android:id="@+id/experience_buttons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_subtitle"
+        app:layout_constraintVertical_bias="0.178">
+
+        <Button
+            android:id="@+id/button_regularly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#555"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="I do it regularly"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button_few_times"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#555"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="I tried it a few times"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button_none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#555"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="None"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

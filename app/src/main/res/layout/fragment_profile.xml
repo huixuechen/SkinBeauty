@@ -1,0 +1,89 @@
+<!-- res/layout/activity_profile.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView_profile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
+        android:backgroundTint="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
+        android:backgroundTint="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
+        android:backgroundTint="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/editText_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
+        android:backgroundTint="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="phone"/>
+
+
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1E88E5"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#555555"
+        android:padding="12dp"/>
+
+</LinearLayout>

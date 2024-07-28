@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    tools:context=".ui.questions.UploadFragment">
+
+    <TextView
+        android:id="@+id/tips_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="                   Tips for Taking Your Selfie\n\n• Avoid wearing makeup and glasses\n• Pull your hair back neatly\n• Face the camera directly and maintain a neutral expression\n• Ensure you are in a well-lit area with natural light"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view_photo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="44dp"
+        android:background="#444"
+        android:contentDescription="Selected Photo"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tips_title" />
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_photo">
+
+        <Button
+            android:id="@+id/button_upload_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#555"
+            android:padding="16dp"
+            android:text="Upload Photo"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/button_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#555"
+            android:padding="16dp"
+            android:text="Continue"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

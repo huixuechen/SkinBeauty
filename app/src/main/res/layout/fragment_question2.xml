@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    tools:context=".ui.questions.Question2Fragment">
+
+    <TextView
+        android:id="@+id/step_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 of 7"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/section_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About you"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/step_indicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/question_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's your age?"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/section_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/question_subtitle"
+        android:layout_width="416dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="12dp"
+        android:text="We'll use this information to personalize your experience."
+        android:textColor="#aaa"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_title" />
+
+    <LinearLayout
+        android:id="@+id/age_buttons"
+        android:layout_width="384dp"
+        android:layout_height="564dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question_subtitle">
+
+        <Button
+            android:id="@+id/button_18_24"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#555"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="18 - 24"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_25_34"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#555"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="25 - 34"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_35_44"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#555"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="35 - 44"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_45_54"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#555"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="45 - 54"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_50_plus"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#555"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="50 +"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
